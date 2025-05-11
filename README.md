@@ -16,7 +16,7 @@ Analyzed user music preferences from an online music service dataset to compute 
     - `genre.csv`:https://drive.google.com/file/d/14yvacjpS-z4TG546gkdkGC-o6E3kdo0L/view?usp=drive_link
  4. Upload CSVs to Colab and run all cells.
 ## Results
-![Output](Visualization_Singer_genre_Count.png) 
+![Output](Visualization_Singer_Genre_Count.png) 
 *Bar chart showing artist counts for pop, rock, metal, and hip hop genres, created with Matplotlib.*
 ## Dataset
 - **Source**: Online music service data (e.g., inspired by Kaggle)
