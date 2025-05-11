@@ -5,24 +5,24 @@ Analyzed user music preferences from an online music service dataset to compute 
 - PySpark 3.5, Google Colab, **Matplotlib**: For data visualization
 ## Steps
  1. Loaded `listening.csv` and `genre.csv` into Spark DataFrames using `spark.read.csv()`.
- 2. Joined DataFrames on artist ID using `df.join()` to link user listens with genres.
+ 2. Joined DataFrames on artist-id using `df.join()` to link user listens with genres.
  3. Grouped by genre (pop, rock, metal, hip hop) using `df.groupBy('genre').count()` to count artists.
  4. Visualized artist counts per genre with a Matplotlib bar chart.
 ## How to Run
  1. Open `PySpark_Data_Processing_and_Visualization.ipynb` in [Google Colab](https://colab.research.google.com/).
  2. Install PySpark and Matplotlib: `!pip install pyspark matplotlib`.
  3. Download datasets:
-    - `listening.csv`:https://drive.google.com/file/d/11_HmJIATLb8mXGswkBZNIklratHboN8r/view?usp=drive_link
-    - `genre.csv`:https://drive.google.com/file/d/14yvacjpS-z4TG546gkdkGC-o6E3kdo0L/view?usp=drive_link
+    - `listening.csv`: https://drive.google.com/file/d/11_HmJIATLb8mXGswkBZNIklratHboN8r/view?usp=drive_link
+    - `genre.csv`: https://drive.google.com/file/d/14yvacjpS-z4TG546gkdkGC-o6E3kdo0L/view?usp=drive_link
  4. Upload CSVs to Colab and run all cells.
 ## Results
 ![Output](Visualization_Singer_Genre_Count.png) 
 *Bar chart showing artist counts for pop, rock, metal, and hip hop genres, created with Matplotlib.*
 ## Dataset
-- **Source**: Online music service data (e.g., inspired by Kaggle)
+- **Source**: Online music service data (e.g., Inspired by Kaggle’s Last.fm datase)
  - **Files**:
    - `listening.csv`: User listening data (columns: user_id, artist_id, listen_count)
-   - `genre.csv`: Artist genres (columns: artist_id, genre)
+   - `genre.csv`: Artist;Genre (columns: artist_id, genre)
  - **Access**: Hosted on Google Drive:
    - [listening.csv](https://drive.google.com/file/d/11_HmJIATLb8mXGswkBZNIklratHboN8r/view?usp=drive_link)
    - [genre.csv](https://drive.google.com/file/d/14yvacjpS-z4TG546gkdkGC-o6E3kdo0L/view?usp=drive_link)
